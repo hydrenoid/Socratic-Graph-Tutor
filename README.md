@@ -20,10 +20,9 @@ The system's authoritative knowledge source is a Neo4j graph database. Education
 
 
 **Graph Architecture Explanation:**
-The visualization above represents the hierarchical nature of the curriculum. In this schema, nodes at the bottom of the chain represent fundamental scientific principles, while nodes at the top represent complex biological processes. The system performs a recursive search through these relationships to identify the "deepest" unmastered prerequisite. By visualizing these connections, we can observe the critical paths the student must navigate to unlock advanced topics.
+The visualization below represents the hierarchical nature of the curriculum. In this schema, nodes at the bottom of the chain represent fundamental scientific principles, while nodes at the top represent complex biological processes. The system performs a recursive search through these relationships to identify the "deepest" unmastered prerequisite. By visualizing these connections, we can observe the critical paths the student must navigate to unlock advanced topics.
 
-> **[INSERT GRAPH SCREENSHOT HERE]**
-> *Instructions: Run `MATCH (n)-[r]->(m) RETURN n,r,m` in Neo4j Browser and replace this placeholder with the exported image.*
+![Alt text](designs/graph.png)
 
 ### 3. Intent Routing and Gatekeeping
 Upon receiving a student query, the system executes a multi-agent logic flow:
@@ -63,7 +62,7 @@ Mapping natural language to a strictly defined Graph Schema often leads to hallu
 ## Technical Stack
 * **Large Language Model**: Kai-org/glm-4.6v-flash
 * **Graph Database**: Neo4j (Cypher Query Language)
-* **Programming Language**: Python 3.10+
+* **Programming Language**: Python 3.11.9
 * **Persistence Layer**: JSON-based student profiles
 
 ---
@@ -81,6 +80,3 @@ Mapping natural language to a strictly defined Graph Schema often leads to hallu
    `python tutor.py`
 
 ---
-
-## Author
-**Jonathon Moore**
