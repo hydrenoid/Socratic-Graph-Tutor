@@ -7,6 +7,7 @@
 ## Core Concept
 The Socratic Graph Tutor addresses the limitation of "AI hand-holding" by acting as a persistent gatekeeper. Using the Kai-org/glm-4.6v-flash model, the system identifies user intent but prevents the explanation of advanced topics until the student demonstrates mastery of the foundational prerequisites stored within the knowledge graph.
 
+
 ---
 
 ## Methodology
@@ -52,7 +53,11 @@ Mapping natural language to a strictly defined Graph Schema often leads to hallu
 
 ## System Architecture
 
+### Ingest Flowchart
+![Alt text](designs/ingestFlowchart.png)
 
+### Tutor Flowchart
+![Alt text](designs/tutorFlowchart.png)
 
 * **Extraction Engine**: A specialized script leverages the LLM to parse raw scientific text into structured JSON for Neo4j ingestion.
 * **Evaluation Loop**: A secondary LLM prompt configuration acts as a strict academic examiner to provide binary Pass/Fail logic on student responses.
