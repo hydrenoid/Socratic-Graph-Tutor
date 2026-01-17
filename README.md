@@ -85,3 +85,20 @@ Mapping natural language to a strictly defined Graph Schema often leads to hallu
    `python tutor.py`
 
 ---
+
+## Author
+
+**Jonathon Moore**
+
+> *Building the bridge between Cognitive AI and Embodied Intelligence.*
+
+I am an AI Engineer specializing in the full stack of modern Artificial Intelligence. This project represents the second pillar of my core competencies:
+
+1.  **Evaluation Frameworks:** Quantifying LLM performance.
+2.  **Generative Graph-RAG:** Building complex, stateful knowledge systems.
+3.  **Embodied Agents (This Project):** Training autonomous decision-making systems in dynamic environments.
+
+---
+
+[<img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin">](https://www.linkedin.com/in/jonathon-moore-8b49b71bb)
+[<img src="https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github">](https://github.com/hydrenoid)
